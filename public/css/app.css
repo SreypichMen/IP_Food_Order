@@ -2,7 +2,7 @@ body {
     font-family: "Lato", sans-serif;
     -webkit-font-smoothing: antialiased;
     color: #232323;
-    height: 4000px;
+    height: 100vh;
 }
 
 nav li:last-child a {
@@ -124,13 +124,6 @@ section.turbo {
     background: #d4cdcd;
 }
 
-body {
-    font-family: "Lato", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    color: #232323;
-    height: 4000px;
-}
-
 nav li:last-child a {
     background-color: #FE5F1E;
 }
@@ -206,17 +199,17 @@ nav li a:hover {
     border-radius: 5px;
 }
 
-@media only screen and (min-width:700px) {
+@media only screen and (min-width:600px) {
     .image_cat {
         width: 257px;
         height: 120px;
     }
 }
 
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:600px) {
     .image_cat {
-        width: 130px;
-        height: 75px;
+        width: 110px;
+        height: px;
     }
 }
 
@@ -246,6 +239,44 @@ section.turbo {
     padding-right: 5%;
 }
 
+button.btn-primary {
+    background-color: #FE5F1E;
+}
+
+.color {
+    color: #FE5F1E;
+}
+
 .size {
     background: #d4cdcd;
+}
+
+footer .footer {
+    position: relative;
+    width: 100%;
+}
+
+.background {
+    background-color: gray;
+    height: 300px;
+    margin-right: 15px;
+}
+
+.classone {
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    justify-content: space-between;
+    display: flex;
+    color: white;
+    margin: 20px
+}
+
+.classtwo {
+    padding-left: 2%;
+    padding-right: 2%;
+    justify-content: space-between;
+    display: flex;
+    color: white;
+    margin: 20px
 }
