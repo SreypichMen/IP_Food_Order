@@ -1,19 +1,20 @@
-const Menu = require('../../models/menu')
+const Menu = require("../../models/menu")
 
 function homeController() {
     return {
-        async index(req, res) {
-            const food = await Menu.find()
-                // console.log(food)
-            return res.render('home', { food: food })
-        }
+        home(req, res) {
+            console.log('home');
 
-        // const food = await Menu.find()
-        // return res.render('home', { food: chicken })
-
-
+            Menu.find({}, function(err, docs) {
+                if (err) {
+                    console.log(err);
+                } else {
+                    console.log("First function call : ", docs);
+                    res.render("home", { data: docs })
+                }
+            });
+        },
     }
 }
-
 
 module.exports = homeController

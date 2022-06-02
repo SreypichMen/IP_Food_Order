@@ -5,9 +5,9 @@ const menuSchema = new Schema({
     name: { type: String, required: true },
     image: { type: String, required: true },
     category: { type: String, required: true },
-    price: { type: Number, required: true },
+    price: { type: String, required: true },
     shop: { type: String, required: true },
-    description: { type: String, required: true }
+    Description: { type: String, required: true }
 })
 
 module.exports = mongoose.model('Menu', menuSchema)
